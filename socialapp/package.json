@@ -1,0 +1,23 @@
+{
+  "name": "socialapp",
+  "version": "1.0.0",
+  "description": "a basic social media app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "express",
+    "api"
+  ],
+  "author": "uday",
+  "license": "ISC",
+  "dependencies": {
+    "date-format": "^4.0.5",
+    "express": "^4.17.3",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
