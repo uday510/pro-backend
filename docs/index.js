@@ -37,7 +37,7 @@ app.get("/api/v1/course", (req, res) => {
     res.send("hello from course");
 });
 
-app.get("/api/v1/course", (req, res) => {
+app.get("/api/v1/courseobject", (req, res) => {
     res.send({id: "10", name: "Learn Backend", price: 999});
 });
 
@@ -67,7 +67,7 @@ app.post("/api/v1/imageupload", (req, res) => {
     let file = req.files.file;
     console.log(req.headers);
     // console.log("file", file);
-    let path = __dirname + "/images/" + ".jpg";
+    let path = __dirname + "/images/" + Date.now() +  ".jpg";
     console.log("path", path);
 
     file.mv(path, function(err) {
